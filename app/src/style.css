@@ -1,0 +1,343 @@
+/* Add at the top of your CSS file */
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* If you want specific weights, you can use them like this: */
+h1 {
+  font-weight: 500;  /* or any weight between 100-1000 */
+}
+
+:root {
+  --pink-bg: #FFF0F0;
+  --directions-bg: #E5B8B8;
+  --border-color: #D3D3D3;
+  --text-color: #452626;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: var(--pink-bg);
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Header Styles */
+h1 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+  position: relative;
+  border: none;
+}
+
+/* Update other text elements */
+h2, h3, p, label, input, button {
+  color: var(--text-color);
+}
+
+.directions-box h2 {
+  color: var(--text-color);
+}
+
+.directions-box li {
+  color: var(--text-color);
+}
+
+/* For any other text elements that need the color */
+.palette-header span {
+  color: var(--text-color);
+}
+
+/* Directions Box */
+.directions-box {
+  background-color: var(--directions-bg);
+  padding: 20px;
+  border-radius: 15px;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+
+.directions-box h2 {
+  margin-top: 0;
+}
+
+.directions-box ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* Form Styles */
+.palette-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  width: 200px;
+}
+
+/* Temperature Radio Buttons */
+.temperature-options {
+  display: flex;
+  gap: 20px;
+  margin: 15px 0;
+}
+
+/* Buttons */
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Palettes Section */
+.palettes-section h2 {
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+.palettes-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.palette-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.palette-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.color-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.color-box {
+  flex: 1;
+  height: 40px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  color: white;
+}
+
+.copy-button {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 4px 8px;
+  font-size: 0.8em;
+}
+
+.delete-button {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.temperature-label {
+  text-align: center;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.temperature-warm {
+  background-color: #fff0e9;
+  color: #cc4e00;
+  border: 1px solid #ffcdb3;
+}
+
+.temperature-neutral {
+  background-color: #f3f3f3;
+  color: #666666;
+  border: 1px solid #dddddd;
+}
+
+.temperature-cool {
+  background-color: #e9f5ff;
+  color: #0066cc;
+  border: 1px solid #b3daff;
+}
+
+/* Add this new container style */
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  width: 100%;
+  text-align: left;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+.directions-box {
+  flex: 0 0 auto;
+  background-color: var(--directions-bg);
+  padding: 20px;
+  border-radius: 15px;
+  min-width: 300px;
+}
+
+.palette-form {
+  flex: 0 0 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.palettes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.palettes-grid {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.top-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 40px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.directions-box {
+  flex: 1 1 300px;
+  min-width: 250px;
+  padding: 1.5rem;
+  background-color: var(--directions-bg);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.directions-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.directions-box ol {
+  padding-left: 1.5rem;
+}
+
+.directions-box li {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+  color: #444;
+}
+
+.palette-form {
+  flex: 0 1 350px;
+  min-width: 300px;
+  margin-left: auto;
+  padding: 1.5rem;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  .top-section {
+    display: block;
+  }
+  
+  .directions-box {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .palette-form {
+    width: 350px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.temperature-desc {
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-left: -1.5rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Style for each temperature type */
+.temp-warm, .temp-neutral, .temp-cool {
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.temp-warm {
+  background-color: #fff0e9;
+  color: #cc4e00;
+  border: 1px solid #ffcdb3;
+}
+
+.temp-neutral {
+  background-color: #f3f3f3;
+  color: #666666;
+  border: 1px solid #dddddd;
+}
+
+.temp-cool {
+  background-color: #e9f5ff;
+  color: #0066cc;
+  border: 1px solid #b3daff;
+}
